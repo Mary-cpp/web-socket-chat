@@ -1,0 +1,6 @@
+{
+  "url" : "jdbc:postgresql://localhost:5432/chat",
+  "driver" : "org.postgresql.Driver",
+  "username" : "chatadmin",
+  "password" : "postgresthebest"
+}
