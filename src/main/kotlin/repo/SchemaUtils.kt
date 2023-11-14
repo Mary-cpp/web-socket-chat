@@ -1,6 +1,5 @@
 package repo
 
-import ch.qos.logback.core.LogbackException
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import kotlinx.serialization.json.Json
