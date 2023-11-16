@@ -9,8 +9,10 @@ import io.ktor.server.plugins.defaultheaders.*
 import io.ktor.server.routing.*
 import io.ktor.server.websocket.*
 import kotlinx.serialization.json.Json
-import repo.DbUtils
-import repo.services.ProfileService
+import data.DbUtils
+import data.services.Base64CypherService
+import data.services.ProfileRepository
+import domain.ProfileControllerImpl
 import routes.userRoutes
 import java.time.Duration
 
@@ -63,6 +65,6 @@ fun Application.configureSerialization() {
 
 fun Application.usersModule() {
     routing {
-        userRoutes(ProfileService())
+        userRoutes(ProfileControllerImpl(ProfileRepository(), Base64CypherService()))
     }
 }

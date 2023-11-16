@@ -1,4 +1,4 @@
-package repo.tables
+package data.tables
 
 import org.jetbrains.exposed.dao.id.UUIDTable
 import org.jetbrains.exposed.sql.ReferenceOption

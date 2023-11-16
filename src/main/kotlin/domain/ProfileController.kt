@@ -1,8 +1,11 @@
 package domain
 
+import data.dto.ProfileAuthDTO
 import java.util.UUID
 
 interface ProfileController {
-    fun checkIfRegistered(profile: ProfileAuthDTO) : Boolean
+
+    val cypherService: CypherService
+    fun findUserByLogin(login: String): Profile?
     suspend fun registerUser(profile: Profile): UUID?
 }

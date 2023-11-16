@@ -1,4 +1,4 @@
-package repo
+package data
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
@@ -8,10 +8,10 @@ import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import repo.tables.ChatAbonentsTable
-import repo.tables.ChatsTable
-import repo.tables.MessagesTable
-import repo.tables.UsersTable
+import data.tables.ChatAbonentsTable
+import data.tables.ChatsTable
+import data.tables.MessagesTable
+import data.tables.UsersTable
 import java.io.File
 
 class DbUtils{
