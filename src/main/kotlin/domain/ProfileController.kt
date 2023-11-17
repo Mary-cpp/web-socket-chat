@@ -1,7 +1,6 @@
 package domain
 
-import data.dto.ProfileAuthDTO
-import java.util.UUID
+import java.util.*
 
 interface ProfileController {
 

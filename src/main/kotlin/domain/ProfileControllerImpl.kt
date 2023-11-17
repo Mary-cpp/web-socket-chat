@@ -1,6 +1,5 @@
 package domain
 
-import data.dto.ProfileAuthDTO
 import java.util.*
 
 class ProfileControllerImpl(

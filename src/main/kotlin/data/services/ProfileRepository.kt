@@ -16,11 +16,7 @@ class ProfileRepository : ProfileRepository {
             UsersTable.select(where = (UsersTable.login eq login)).firstOrNull()?.let {
                 Profile(name = it[UsersTable.name], surname = it[UsersTable.surname], login = it[UsersTable.login],
                     password = it[UsersTable.password])
-            }/*
-            UsersTable.select(UsersTable.login eq login).map {
-                Profile(name = it[UsersTable.name], surname = it[UsersTable.surname], login = it[UsersTable.login],
-                    password = it[UsersTable.password])
-            }.last()*/
+            }
         }
     }
 
