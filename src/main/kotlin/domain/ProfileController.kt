@@ -1,5 +1,6 @@
 package domain
 
+import domain.model.Profile
 import java.util.*
 
 interface ProfileController {
