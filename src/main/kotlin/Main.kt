@@ -13,6 +13,7 @@ import data.DbUtils
 import data.services.Base64CypherService
 import data.services.ProfileRepository
 import domain.ProfileControllerImpl
+import domain.SessionHolder
 import routes.userRoutes
 import java.time.Duration
 
@@ -65,6 +66,6 @@ fun Application.configureSerialization() {
 
 fun Application.usersModule() {
     routing {
-        userRoutes(ProfileControllerImpl(ProfileRepository(), Base64CypherService()))
+        userRoutes(ProfileControllerImpl(ProfileRepository(), Base64CypherService()), SessionHolder())
     }
 }
