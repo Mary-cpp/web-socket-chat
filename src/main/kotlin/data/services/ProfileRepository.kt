@@ -1,6 +1,6 @@
 package data.services
 
-import domain.Profile
+import domain.model.Profile
 import domain.ProfileRepository
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.insertAndGetId
